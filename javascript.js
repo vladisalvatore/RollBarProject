@@ -47,5 +47,7 @@
     {
       emailsSent++;
       console.log(emailsSent);
-      alert("You have send a total of " + emailsSent + " Emails")
+      alert("You have send a total of " + emailsSent + " Emails");
+      document.getElementById(limit); 
+      checkLimit(emailsSent);
     }
