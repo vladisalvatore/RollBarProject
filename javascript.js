@@ -1,5 +1,6 @@
 
     var openInbox = document.getElementById("myBtn");
+    var emailsSent = 0;
     openInbox.click();
     
     function w3_open() {
@@ -38,5 +39,13 @@
       document.getElementById(personName).style.display = "block";
       event.currentTarget.className += " w3-light-grey";
     }
-var openTab = document.getElementById("firstTab");
-openTab.click();
+
+ 
+  
+
+    function countSentEmails()
+    {
+      emailsSent++;
+      console.log(emailsSent);
+      alert("You have send a total of " + emailsSent + " Emails")
+    }
