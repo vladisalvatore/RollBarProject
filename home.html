@@ -84,7 +84,7 @@
       <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What's on your mind?">
       <div class="w3-section">
         <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
-        <a class="w3-button w3-light-grey w3-right" onclick="document.getElementById('id01').style.display='none';countSentEmails()">Send  <i class="fa fa-paper-plane"></i></a> 
+        <a class="w3-button w3-light-grey w3-right" onclick="document.getElementById('id01').style.display='none';countSentEmails();">Send  <i class="fa fa-paper-plane"></i></a> 
       </div>    
     </div>
   </div>
@@ -188,12 +188,15 @@ var openInbox = document.getElementById("myBtn");
       emailsSent++;
       console.log(emailsSent);
       alert("You have send a total of " + emailsSent + " Emails");
-      document.getElementById(limit); 
-      checkLimit(emailsSent);
+      document.getElementById(nbrOfErrors)
+      document.getElementById(limit)
+      checkLimit(emailsSent)
+      logError();
     }
 
 var openTab = document.getElementById("firstTab");
-  openTab.click();</script>
+  openTab.click();
+  </script>
 
 </body>
 </html> 
